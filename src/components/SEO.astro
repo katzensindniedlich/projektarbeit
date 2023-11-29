@@ -1,0 +1,14 @@
+import config from '@config'
+
+const {
+    description=config.description
+} = Astro.props
+---
+
+{ description &&
+    <meta
+        name=description property=og:description
+        content={description}
+    >
+}
+<meta name=generator content={Astro.generator}>

@@ -1,0 +1,17 @@
+%full-height {
+    height: 100%
+}
+
+html {
+    @extend %full-height;
+
+    user-select: none;
+    scroll-behavior: smooth;
+    pointer-events: none;
+}
+
+body {
+    @extend %full-height;
+
+    margin: 0
+}

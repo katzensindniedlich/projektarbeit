@@ -14,35 +14,35 @@ import Layout from '@layouts/Layout.astro'
 </Layout>
 
 <style>
-	@keyframes sliding {
-		to {
-			background-position: 50px 50px
-		}
+@keyframes sliding {
+	to {
+		background-position: 50px 50px
 	}
+}
 
-    .background {
-		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-		animation: sliding 1s infinite;
-		animation-timing-function: linear
-	}
+.background {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+	animation: sliding 1s infinite;
+	animation-timing-function: linear
+}
 
-	.gardient {
-		background: linear-gradient(90deg, rgb(81 91 171 / 50%) 0%, rgb(60 91 122 / 45%) 25%, rgb(61 63 96 / 50%) 50%, rgb(55 55 98 / 55%) 75%, rgb(100 111 157 / 65%) 100%);
-        display: grid;
-		overflow: hidden;
-		align-content: center;
-		justify-content: center
-	}
+.gardient {
+	background: linear-gradient(90deg, rgb(81 91 171 / 50%) 0%, rgb(60 91 122 / 45%) 25%, rgb(61 63 96 / 50%) 50%, rgb(55 55 98 / 55%) 75%, rgb(100 111 157 / 65%) 100%);
+	display: grid;
+	overflow: hidden;
+	align-content: center;
+	justify-content: center
+}
 
-	.background, .gardient {
-		height: 100%
-	}
+.background, .gardient {
+	height: 100%
+}
 
-	.pawn {
-		max-width: 100vw;
-    	max-height: 100vh;
-		object-fit: contain;
-        transform: scale(.5);
-		filter: drop-shadow(8px 8px 35px black)
-	}
+.pawn {
+	max-width: 100vw;
+	max-height: 100vh;
+	object-fit: contain;
+	transform: scale(.5);
+	filter: drop-shadow(8px 8px 35px black)
+}
 </style>

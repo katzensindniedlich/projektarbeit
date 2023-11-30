@@ -1,6 +1,5 @@
 ---
 import config from '@config'
-import Image from '@public/android-chrome-512x512.png'
 
 const {
     description=config.description
@@ -13,6 +12,6 @@ const {
         content={description}
     >
 }
-<meta property=og:image content={Image.url}>
+<meta property=og:image content={new Url('android-chrome-512x512.png', Astro.site)}>
 <meta name=theme-color content='#111019'>
 <meta name=generator content={Astro.generator}>

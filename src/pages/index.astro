@@ -15,13 +15,9 @@ import Layout from '@layouts/Layout.astro'
 
 <style>
 	@keyframes sliding {
-		100% {
+		to {
 			background-position: 50px 50px
 		}
-	}
-    
-	.background, .gardient {
-		height: 100%
 	}
 
     .background {
@@ -36,6 +32,10 @@ import Layout from '@layouts/Layout.astro'
 		overflow: hidden;
 		align-content: center;
 		justify-content: center
+	}
+
+	.background, .gardient {
+		height: 100%
 	}
 
 	.pawn {

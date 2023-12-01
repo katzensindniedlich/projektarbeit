@@ -1,15 +1,20 @@
 ---
 import config from '@config'
-import ImageURL from '@public/android-chrome-512x512.png?url'
 
 const { description=config.description } = Astro.props
 ---
 
-{ config.theme &&
-    <meta name=theme-color content={config.theme}>
-}
 { description &&
-    <meta name=description property=og:description content={description}>
+    <meta 
+        name=description property=og:description 
+        content={description}
+    >
 }
-<meta property=og:image content={ImageURL}>
-<meta name=generator content={Astro.generator}>
+<meta 
+    property=og:image 
+    content={new URL('android-chrome-512x512.png', Astro.site)}
+>
+<meta 
+    name=generator 
+    content={Astro.generator}
+>

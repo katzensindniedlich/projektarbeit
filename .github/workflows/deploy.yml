@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install
-        run: bun install
+        run: bun install --save
 
       - name: Build
         run: bun run build

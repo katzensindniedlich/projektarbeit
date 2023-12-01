@@ -7,6 +7,7 @@
         "@config": ["config.mts"],
         "@public/*": ["public/*"],
         "@styles/*": ["src/styles/*"],
+        "@images/*": ["src/assets/images/*"],
         "@layouts/*": ["src/layouts/*"],
         "@components/*": ["src/components/*"]
       }

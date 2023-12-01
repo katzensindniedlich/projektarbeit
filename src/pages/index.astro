@@ -1,19 +1,10 @@
 ---
-import { Image } from 'astro:assets'
-
-import Pawn from '@public/pawn-256x256.png'
+import Pawn from '@components/Pawn.astro'
 import Layout from '@layouts/Layout.astro'
 ---
 
 <Layout>
     <background>
-        <Image src={Pawn} format=png alt=Icon style={
-			{
-				'max-width': '50vw',
-				'max-height': '50vh',
-				'object-fit': 'contain',
-				'filter': 'drop-shadow(5px 5px 18px black)'
-			}
-		}/>
+        <Pawn />
     </background>
 </Layout>

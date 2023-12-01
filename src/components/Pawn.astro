@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets'
+
+import Icon from '@images/pawn-256x256.png'
+---
+
+<Image src={Icon} format=png alt=Pawn style={
+    {
+        'max-width': '50vw',
+        'max-height': '50vh',
+        'object-fit': 'contain',
+        'filter': 'drop-shadow(5px 5px 18px black)'
+    }
+}/>

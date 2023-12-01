@@ -12,7 +12,6 @@
     "devDependencies": {
         "sass": "^1.69.5",
         "typescript": "^5.2.2",
-        "@astrojs/check": "^0.2.1",
-        "astro-webmanifest": "^1.0.0"
+        "@astrojs/check": "^0.2.1"
     }
 }

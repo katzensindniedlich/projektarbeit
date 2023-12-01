@@ -4,6 +4,9 @@ import config from '@config'
 const { description=config.description } = Astro.props
 ---
 
+{ config.theme &&
+    <meta name=theme-color content={config.theme}>
+}
 { description &&
     <meta 
         name=description property=og:description 
